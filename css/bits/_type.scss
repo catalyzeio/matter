@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic');
+$f_sans: 'Source Sans Pro', sans-serif;
+body{
+    font-family: $f_sans;
+    font-size: 14px;
+    a{
+        @include easing(350ms);
+        text-decoration: none;
+        color: $c_catalyze;
+        &:hover{
+            @include easing(350ms);
+        }
+    }
+}
+p{
+    font-size: 14px;
+    color: $c_gray-3;
+    line-height: 1.5;
+}

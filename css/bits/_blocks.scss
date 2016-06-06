@@ -1,0 +1,42 @@
+.block-wrapper{
+    margin: 20px;
+    box-shadow: 0px 2px 6px 0px rgba(63,77,110,0.30);
+    @include border-radius(5px);
+    article{
+        header{
+            @extend .cf;
+            padding: 20px;
+            border-bottom: 1px solid $c_border;
+            h1{
+                float: left;
+                font-size: 20px;
+                color: $c_gray-4;
+            }
+            h3,
+            h2{
+                float: right;
+                font-size: 14px;
+                color: $c_gray-3;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin: 3px 0px 0px 0px;
+            }
+            h3{text-transform: none;}
+        }
+        main{padding: 20px;}
+        .small-block{
+            box-shadow: 0px 2px 6px 0px rgba(63,77,110,0.30);
+            margin: 0px 0px 20px 0px;
+            &:last-of-type{margin: 0px;}
+            header{padding: 10px;}
+            h4{
+                font-size: 16px;
+                color: $c_gray-4;
+            }
+            article{
+                padding: 10px;
+            }
+            @include border-radius(5px);
+        }
+    }
+}

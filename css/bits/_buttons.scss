@@ -1,0 +1,48 @@
+button.button,
+a.button{
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    background-image: -webkit-linear-gradient(#F8FAFF 0%, #EAEDF3 100%);
+    background-image: -o-linear-gradient(#F8FAFF 0%, #EAEDF3 100%);
+    background-image: linear-gradient(#F8FAFF 0%, #EAEDF3 100%);
+    box-shadow: inset 0px -1px 2px 0px rgba(160,168,188,0.35);
+    color: $c_stratum;
+    @include border-radius(5px);
+    &:hover{
+        cursor: pointer;
+        background-image: -webkit-linear-gradient(darken(#F8FAFF, 1%) 0%, darken(#EAEDF3, 1%) 100%);
+        background-image: -o-linear-gradient(darken(#F8FAFF, 1%) 0%, darken(#EAEDF3, 1%) 100%);
+        background-image: linear-gradient(darken(#F8FAFF, 1%) 0%, darken(#EAEDF3, 1%) 100%);
+    }
+}
+button.button-dark,
+a.button-dark{
+    @extend .button;
+    background-image: -webkit-linear-gradient(#586482 0%, #1A202F 100%);
+    background-image: -o-linear-gradient(#586482 0%, #1A202F 100%);
+    background-image: linear-gradient(#586482 0%, #1A202F 100%);
+    box-shadow: inset 0px 0px 0px 0px transparent;
+    color: $c_gray-1;
+    &:hover{
+        color: $c_gray-0;
+        background-image: -webkit-linear-gradient(darken(#586482, 1%) 0%, darken(#1A202F, 1%) 100%);
+        background-image: -o-linear-gradient(darken(#586482, 1%) 0%, darken(#1A202F, 1%) 100%);
+        background-image: linear-gradient(darken(#586482, 1%) 0%, darken(#1A202F, 1%) 100%);
+    }
+    &:active{box-shadow: inset 0px 0px 0px 0px transparent;}
+}
+button.button-hollow,
+a.button-hollow{
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    color: $c_stratum;
+    border: 1px solid $c_stratum;
+    @include border-radius(5px);
+    &:hover{
+        cursor: pointer;
+        color: $c_gray-0;
+        background-color: $c_stratum;
+    }
+}

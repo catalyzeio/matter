@@ -1,0 +1,57 @@
+.main-header{
+    padding: 20px;
+    @extend .cf;
+    p,h1,h2,h3,h4{
+        float: left;
+        margin: 8px 0px 0px 0px;
+    }
+    a.logo{
+        background-image: url('../img/logo.png');
+        width: 120px;
+        height: 25px;
+        display: block;
+        float: left;
+        margin: 5px 0px 0px 0px;
+        background-size: 120px 25px;
+    }
+    nav{
+        float: right;
+        a{
+            display: inline-block;
+            margin: 0px 0px 0px 20px;
+            &:hover{color: $c_stratum;}
+        }
+        // Override a styles for buttons
+        a.button-dark,
+        a.button-hollow{&:hover{color: $c_gray-0;}}
+        .dropdown{
+            margin: 0px 0px 0px 20px;
+            color: $c_catalyze;
+            @include easing(350ms);
+            &:hover{@include easing(350ms);color: $c_stratum;}
+            .dropdown-inner{
+                width: 200px;
+                top: 35px;
+                left: 0px;
+                a{
+                    margin: 0px;
+                    display: block;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    .dropdown-inner{
+        position: absolute;
+        background-color: $c_gray-0;
+        box-shadow: 0px 2px 6px 0px rgba(63,77,110,0.30);
+        padding: 5px;
+        @include border-radius(5px);
+    }
+    .icon{font-size: 12px;}
+}
