@@ -30,9 +30,9 @@
             @include easing(350ms);
             &:hover{@include easing(350ms);color: $c_stratum;}
             .dropdown-inner{
-                width: 200px;
-                top: 35px;
-                left: 0px;
+                width: 120px;
+                top: 25px;
+                right: 0px;
                 a{
                     margin: 0px;
                     display: block;

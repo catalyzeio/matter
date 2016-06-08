@@ -1,7 +1,10 @@
 <html>
     <head>
         <title>Matter 0.0.2</title>
+        <!-- Catalyze Matter 0.0.2 -->
         <link rel="stylesheet" href="/css/matter.css">
+        <!-- Example css is only for the purpose of this guide -->
+        <link rel="stylesheet" href="/example.css">
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <!-- This interaction should not be used in any product. -->
         <script>
@@ -21,38 +24,166 @@
                 <a href="/#" class="logo"></a>
                 <nav>
                     <div class="dropdown">
-                        Dropdown <span class="icon icon-circle-down"></span>
+                        Github <span class="icon icon-circle-down"></span>
                         <div class="dropdown-inner">
-                            <a href="/#">Oh hey whadup</a>
-                            <a href="/#">Oh hey whadup</a>
-                            <a href="/#">Oh hey whadup</a>
+                            <a href="//github.com/catalyzeio/matter/issues" target="_blank">File an issue</a>
+                            <a href="//github.com/catalyzeio/matter" target="_blank">View Code</a>
+                            <a href="/#" target="_blank">Contribute</a>
                         </div>
                     </div>
-                    <a href="/#">A Link</a>
-                    <a href="/#">More Links</a>
-                    <a href="/#" class="button">Account</a>
-                    <a href="/#" class="button-dark">Log Out</a>
-                    <a href="/#" class="button-hollow">Test</a>
+                    <a href="//product.catalyze.io" class="button" target="_blank">Account</a>
                 </nav>
             </header>
-            <section class="block-wrapper">
+            <section class="block-hollow">
+                <h1 class="title">Matter 0.0.2</h1>
+                <h2 class="sub-title">Catalyze product styleguide and framework</h2>
+                <div class="notification">
+                    <p>This guide outlines the architecture of Matter, a product styleguide and framework. In release 0.0.2, Matter mostly consists of basic styles and is intended to be heuristic in nature. Contribution at this early stage is highly encouraged.</p>
+                </div>
+                <nav class="example">
+                    <a href="#how-to-get-matter">How to get Matter</a>
+                    <a href="#grid-system">Grid system</a>
+                    <a href="#blocks">Blocks</a>
+                    <a href="#navigation">Navigation</a>
+                    <a href="#icons">Icons</a>
+                    <a href="#typography">Typography</a>
+                    <a href="#colors">Colors</a>
+                    <a href="#notifications">Notifications</a>
+                    <a href="#forms">Forms</a>
+                </nav>
+            </section>
+            <section class="block-main" id="how-to-get-matter">
                 <article>
                     <header>
-                        <h1>Environment Name</h1>
-                        <h3>Some other info</h3>
+                        <h1>How to get Matter</h1>
+                    </header>
+                    <main>
+                        <div class="notification-good">
+                            <p>You can get matter by either cloning this repo and using the matter.css file (link to the Github repo in the header) or you can copy and paste the link below into your document.</p>
+                            <p><code>https://some-link-that-will-exist.com/matter-0.0.2.css</code></p>
+                        </div>
+                    </main>
+                </article>
+            </section>
+            <section class="block-main" id="grid-system">
+                <article>
+                    <header>
+                        <h1>Grid system</h1>
+                    </header>
+                    <main>
+                        <p class="b-20">This grid system is comprised of 12 columns. The max width of the grid in Matter is 900px with a min width of 755px. Changing this is encouraged within the product you are working on, not in the master _grid.scss file.</p>
+                        <div class="row">
+                            <div class="col-1-1">
+                                <div class="notification">
+                                    <p><code>.col-1-1</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1-2">
+                                <div class="notification">
+                                    <p><code>.col-1-2, .col-6-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-1-2">
+                                <div class="notification">
+                                    <p><code>.col-1-2, .col-6-12</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4-12">
+                                <div class="notification">
+                                    <p><code>.col-4-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-4-12">
+                                <div class="notification">
+                                    <p><code>.col-4-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-4-12">
+                                <div class="notification">
+                                    <p><code>.col-4-12</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3-12">
+                                <div class="notification">
+                                    <p><code>.col-3-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-3-12">
+                                <div class="notification">
+                                    <p><code>.col-3-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-3-12">
+                                <div class="notification">
+                                    <p><code>.col-3-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-3-12">
+                                <div class="notification">
+                                    <p><code>.col-3-12</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7-12">
+                                <div class="notification">
+                                    <p><code>.col-7-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-5-12">
+                                <div class="notification">
+                                    <p><code>.col-5-12</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4-12">
+                                <div class="notification">
+                                    <p><code>.col-4-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-8-12">
+                                <div class="notification">
+                                    <p><code>.col-8-12</code></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5-12">
+                                <div class="notification">
+                                    <p><code>.col-7-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-4-12">
+                                <div class="notification">
+                                    <p><code>.col-4-12</code></p>
+                                </div>
+                            </div>
+                            <div class="col-3-12">
+                                <div class="notification">
+                                    <p><code>.col-3-12</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </article>
+            </section>
+            <section class="block-main" id="blocks">
+                <article>
+                    <header>
+                        <h1>New Block Example</h1>
+                        <h3>Some information floated left</h3>
                     </header>
                     <main>
                         <div class="small-block">
                             <header>
-                                <h4>Small Block</h4>
-                            </header>
-                            <article>
-                                <p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            </article>
-                        </div>
-                        <div class="small-block">
-                            <header>
-                                <h4>Small Block</h4>
+                                <h4>Inner block example</h4>
                             </header>
                             <article>
                                 <p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -61,28 +192,97 @@
                     </main>
                 </article>
             </section>
-            <section class="block-wrapper">
+            <!-- Formerly .object-block, .main-block -->
+            <section class="block-legacy">
+                <header>
+                    <div class="org-name">
+                        <span class="icon icon-office"></span> Content
+                    </div>
+                    <div class="logging">
+                        <a ng-show="environment.baseUrl" ng-href="https://{{environment.baseUrl}}/logging/" target="_blank">
+                            <span class="icon icon-stats-bars"></span> Logging
+                        </a>
+                        <a class="disabled" ng-hide="environment.baseUrl" href="">
+                            <span class="icon icon-stats-bars"></span> Logging
+                        </a>
+                    </div>
+                    <div class="monitoring">
+                        <a ng-show="environment.baseUrl" ng-href="https://{{environment.baseUrl}}/monitoring/" target="_blank">
+                            <span class="icon icon-eye"></span> Monitoring
+                        </a>
+                        <a class="disabled" ng-hide="environment.baseUrl" href="">
+                            <span class="icon icon-eye"></span> Monitoring
+                        </a>
+                    </div>
+                </header>
+                <div class="env-name">
+                    <span class="icon icon-stack"></span> Legacy Block Example
+                </div>
+                <div class="dashboard-list-content">
+                    <div class="dashboard-service">
+                    <header>
+                        <div class="name">
+                            <span class="service-pill-default">Pill Label</span>
+                            Content
+                        </div>
+                        <div class="service-info">Content</div>
+                        <a class="view-details" href="#">Content</a>
+                    </header>
+                    <div class="service-jobs">
+                        <span class="service-jobs-label">Content</span>
+                        <span class="job-info">Content</span>
+                    </div>
+                </div>
+            </section>
+            <!-- end /.legacy-block -->
+            <section class="block-hollow">
+                <div class="notification">
+                    <h1>Notification</h1>
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+            </section>
+            <section class="block-hollow">
+                <div class="col-4-12">
+                    <div class="notification-primary">
+                        <h1>Notification</h1>
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis.</p>
+                    </div>
+                </div>
+                <div class="col-4-12">
+                    <div class="notification-good">
+                        <h1>Notification</h1>
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis.</p>
+                    </div>
+                </div>
+                <div class="col-4-12">
+                    <div class="notification-bad">
+                        <h1>Notification</h1>
+                        <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis. Something a little more goes here.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="block-main">
                 <article>
                     <header>
-                        <h1>Environment Name</h1>
-                        <h3>Some other info</h3>
+                        <h1>Form example</h1>
+                        <h3>Standard form template</h3>
                     </header>
                     <main>
                         <div class="small-block">
                             <header>
-                                <h4>Small Block</h4>
+                                <h4>Form</h4>
                             </header>
-                            <article>
-                                <p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            </article>
-                        </div>
-                        <div class="small-block">
-                            <header>
-                                <h4>Small Block</h4>
-                            </header>
-                            <article>
-                                <p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                            </article>
+                            <form>
+                                <div class="form-group">
+                                    <label>Text Input</label>
+                                    <input type="text" placeholder="input placeholder...">
+                                    <p class="help">Some example of helper text</p>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email Input</label>
+                                    <input type="text" placeholder="input placeholder...">
+                                </div>
+                            </form>
                         </div>
                     </main>
                 </article>

@@ -13,4 +13,23 @@ $c_gray-3: #8292BA;
 $c_gray-4: #404D6F;
 
 // Tools
-$c_border: lighten($c_gray-1, 5%);
+$c_border: lighten($c_gray-1, 2%);
+$c_bg: #F4F6FC;
+$c_highlight: #FCFAED;
+$c_highlight-border: #CEC8A1;
+$c_highlight-text: #A9A462;
+$c_good: #F1FFF9;
+$c_good-border: #8AB8A4;
+$c_good-text: #629B82;
+$c_bad: #FFF3F2;
+$c_bad-border: #C07B75;
+$c_bad-text: #A8655F;
+$c_text: #A3A6AE;
+$c_code: #A95FFF;
+$c_db: lighten(#252838, 20%);
+$c_cache: #9a54d0;
+$c_git: #e428b4;
+$c_midnight: #252838;
+$c_addon: #40A8D3;
+$c_washed-blue: #5075AB;
+$c_washed-blue-light: #E8ECFF;

@@ -1,6 +1,7 @@
-.block-wrapper{
+.block-main{
     margin: 20px;
     box-shadow: 0px 2px 6px 0px rgba(63,77,110,0.30);
+    @extend .cf;
     @include border-radius(5px);
     article{
         header{
@@ -23,7 +24,11 @@
             }
             h3{text-transform: none;}
         }
-        main{padding: 20px;}
+        main{@extend .cf;padding: 20px;}
+        .row{
+            margin: 0px 0px 20px 0px;
+            @extend .cf;
+        }
         .small-block{
             box-shadow: 0px 2px 6px 0px rgba(63,77,110,0.30);
             margin: 0px 0px 20px 0px;
@@ -39,4 +44,19 @@
             @include border-radius(5px);
         }
     }
+}
+.block-hollow{
+    @extend .block-main;
+    box-shadow: 0px 0px 0px 0px transparent;
+}
+// Legacy Block
+.block-legacy{
+    margin: 20px;
+    border-top: 1px solid $c_border;
+    border-right: 1px solid $c_border;
+    border-left: 1px solid $c_border;
+    border-bottom: 3px solid $c_border;
+    background-color: $c_gray-0;
+    @include box-shadow(0px 0px 10px $c_border);
+    @include border-radius(5px);
 }

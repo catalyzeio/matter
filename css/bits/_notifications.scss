@@ -1,0 +1,32 @@
+.notification{
+    background-color: $c_bg;
+    border: 1px solid $c_border;
+    @include border-radius(5px);
+    padding: 20px;
+    h1{
+        font-size: 16px;
+        color: $c_gray-4;
+        margin: 0px 0px 20px 0px;
+    }
+}
+.notification-primary{
+    @extend .notification;
+    background-color: $c_highlight;
+    border: 1px solid $c_highlight-border;
+    color: $c_highlight-text;
+    h1,p{color: $c_highlight-text;}
+}
+.notification-good{
+    @extend .notification;
+    background-color: $c_good;
+    border: 1px solid $c_good-border;
+    color: $c_good-text;
+    h1,p{color: $c_good-text;}
+}
+.notification-bad{
+    @extend .notification;
+    background-color: $c_bad;
+    border: 1px solid $c_bad-border;
+    color: $c_bad-text;
+    h1,p{color: $c_bad-text;}
+}

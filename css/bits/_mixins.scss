@@ -1,3 +1,11 @@
+@mixin background-gradient($c1, $c2){
+    background: -moz-linear-gradient(-180deg, $c1 0%, $c2 70%);
+    background: -webkit-gradient(linear, -180deg, $c1 0%, $c2 70%);
+    background: -webkit-linear-gradient(-180deg, $c1 0%, $c2 70%);
+    background: -o-linear-gradient(-180deg, $c1 0%, $c2 70%);
+    background: -ms-linear-gradient(-180deg, $c1 0%, $c2 70%);
+    background: linear-gradient(-180deg, $c1 0%, $c2 70%);
+}
 @mixin border-radius($r){
     -webkit-border-radius: $r;
     -moz-border-radius: $r;

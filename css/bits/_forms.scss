@@ -1,0 +1,32 @@
+form{
+    .form-group{margin: 0px 0px 20px 0px;}
+    padding: 20px;
+}
+label{
+    display: block;
+    padding: 0px 0px 10px 0px;
+    color: $c_gray-3;
+    font-size: 16px;
+}
+textarea,
+input,
+input[type="email"],
+input[type="text"]{
+    padding: 15px;
+    font-size: 14px;
+    font-family: $f_sans;
+    color: $c_gray-4;
+    @include border-radius(5px);
+    border: 1px solid $c_border;
+    display: block;
+    width: 100%;
+    outline: none;
+    &:focus{
+        background-color: $c_bg;
+        border: 1px solid $c_gray-1;
+    }
+}
+p.help{
+    font-size: 12px;
+    color: $c_text;
+}
